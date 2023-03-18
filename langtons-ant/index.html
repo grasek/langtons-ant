@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Langton's Ant</title>
+  </head>
+  <body id="page">
+    <section id="content">
+      <div style="display: flex; flex-direction: column">
+        <h1>Langton's Ant</h1>
+        <a
+          style="color: black"
+          href="https://en.wikipedia.org/wiki/Langton%27s_ant"
+          >More about Langton's Ant</a
+        >
+      </div>
+      <canvas
+        id="canvas"
+        width="800"
+        height="800"
+        style="border: 3px solid #000"
+      ></canvas>
+      <script src="ant.js"></script>
+      <script>
+        let ant = new Ant();
+        timer = setInterval("ant.run()", 1);
+      </script>
+    </section>
+  </body>
+</html>
